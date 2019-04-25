@@ -11,21 +11,16 @@
     "url": "git+https://github.com/velusgautam/velusgautam.com.git"
   },
   "keywords": [
-    "velu",
-    "s",
-    "gautam",
-    "senior",
-    "web",
-    "developer",
-    "javascript",
-    "developer"
+    "velu s gautam",
+    "senior web developer",
+    "javascript developer"
   ],
   "author": "Velu S Gautam",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/velusgautam/velusgautam.com/issues"
   },
-  "homepage": "https://github.com/velusgautam/velusgautam.com#readme",
+  "homepage": "http://www.velusgautam.com",
   "devDependencies": {
     "surge": "^0.20.4"
   }
