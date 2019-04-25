@@ -5,5 +5,5 @@ cache:
   directories:
     - node_modules
 script:
-  - surge --domain velusgautam.com
+  - surge --domain velusgautam.com --project ./
 
