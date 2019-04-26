@@ -4,6 +4,9 @@ node_js:
 cache:
   directories:
     - node_modules
+install:
+  - npm install
 script:
   - surge --domain velusgautam.com --project ./build/
-
+after_success:
+ - npm run lh -- --perf=50 --pwa=50 https://velusgautam.com
