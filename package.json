@@ -4,7 +4,8 @@
   "description": "velu s gautam personal website",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified.\""
+    "test": "echo \"Error: no test specified.\"",
+    "lh": "lighthousebot"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   },
   "homepage": "http://www.velusgautam.com",
   "devDependencies": {
+    "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
     "surge": "^0.20.4"
   }
 }
