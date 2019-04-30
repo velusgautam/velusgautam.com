@@ -2352,12 +2352,12 @@ html input[type=button],
 input[type=reset],
 input[type=submit],
 ul.personal-info .title {
-    background: #0997E3
+    background:#0075D6
 }
 
 h2.caption span:after,
 ul.personal-info .title:after {
-    border-left-color: #0997E3
+    border-left-color:#0075D6
 }
 
 #filters li,h1,h2,h3,h4,h5,h6 {
@@ -2374,7 +2374,7 @@ ul.personal-info .title:after {
 input:focus,
 span.label.primary,
 textarea:focus {
-    border-color: #0997E3
+    border-color:#0075D6
 }
 
 #header nav ul li.current-menu-item a,
