@@ -1,6 +1,7 @@
 <!doctype html>
-<html class="no-overflow" data-safeMod="false" data-mobileSafeMod="true" data-safeModPageInAnimation="fadeInLeft" data-inAnimation="fadeInLeft" data-outAnimation="fadeOutRightBig" data-lightboxInAnimation="fadeInLeftBig" data-profileImageAnimation="rotate-left"
-    data-jmpressAnimationDuration="1000" data-hideScrollbar="true">
+<html class="no-overflow" data-safeMod="false" data-mobileSafeMod="true" data-safeModPageInAnimation="fadeInLeft"
+    data-inAnimation="fadeInLeft" data-outAnimation="fadeOutRightBig" data-lightboxInAnimation="fadeInLeftBig"
+    data-profileImageAnimation="rotate-left" data-jmpressAnimationDuration="1000" data-hideScrollbar="true">
 
 <head>
     <meta charset="utf-8" />
@@ -23,9 +24,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="images/ico/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/ico/favicon-16x16.png">
-    <link rel="manifest" href="images/ico/manifest.json">
+
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <!-- <meta name="msapplication-TileImage" content="/ms-icon-144x144.png"> -->
     <meta name="theme-color" content="#ffffff"> <!-- FONTS -->
     <!-- <link rel="preload" href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
         as="font">
@@ -34,7 +35,7 @@
     <!-- STYLES -->
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- SCRIPTS -->
     <!--[if lte IE 9]><script src="js/IE9.js"></script><![endif]-->
-    
+
 </head>
 
 <body>
@@ -93,11 +94,14 @@
                             <h3>Let's socialize!</h3> <!-- social icons -->
                             <ul class="social">
                                 <li><a class="facebook" href="https://www.facebook.com/velusgautam"
-                                        target="_blank">&#88;</a></li>
-                                <li><a class="twitter" href="https://twitter.com/velusgautam" target="_blank">&#95;</a>
+                                        rel="noreferrer noopener" aria-label="facebook link" target="_blank">&#88;</a>
+                                </li>
+                                <li><a class="twitter" href="https://twitter.com/velusgautam" rel="noreferrer noopener"
+                                        aria-label="twitter link" target="_blank">&#95;</a>
                                 </li>
                                 <li><a class="linkedin" href="https://www.linkedin.com/in/velusgautam"
-                                        target="_blank">&#118;</a></li>
+                                        rel="noreferrer noopener" aria-label="linkedin link" target="_blank">&#118;</a>
+                                </li>
                             </ul>
                         </div>
                         <!--column 4/12-->
@@ -309,9 +313,11 @@
                         <div class="span5">
                             <h3>Drop me a line!</h3>
                             <!--CONTACT FORM-->
-                            <form id="contact-form" action="send-mail.php" method="post" class="validate-form">
+                            <form id="contact-form" name="contact" method="POST" data-netlify="true"
+                                netlify-honeypot="bot-field">
                                 <fieldset>
                                     <!-- personal info -->
+
                                     <ul class="personal-info contact-form">
                                         <li><label class="title" for="name">NAME</label><input class="text required"
                                                 id="name" name="name" type="text" placeholder="What is your name?"></li>
@@ -326,6 +332,9 @@
                                                 class="icon">Ã</span> </li>
                                     </ul> <!-- personal info -->
                                 </fieldset>
+                                <p class="hidden">
+                                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                </p>
                             </form>
                             <!--CONTACT FORM-->
                         </div>
@@ -342,22 +351,16 @@
     <div class="p-overlay"> </div>
     <div class="loader"></div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')
-    </script>
-    <script src="js/jquery.address-1.4.min.js"></script>
-    <script src="js/detectmobilebrowser.min.js"></script>
-    <script src="js/jmpress.min.js"></script>
-    <script src="js/iscroll.min.js"></script>
-    <script src="js/jScroll.min.js"></script>
-    <script src="js/modernizr.min.js"></script>
-    <script src="js/jquery.waitforimages.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.transitions.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.address-1.4.min.js"></script>
+<script src="js/detectmobilebrowser.min.js"></script>
+<script src="js/jmpress.min.js"></script>
+<script src="js/jScroll.min.js"></script>
+<script src="js/jquery.waitforimages.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.transitions.min.js"></script>
+<script src="js/spin.min.js"></script>
+<script src="js/send-mail.min.js"></script>
+<script src="js/main.min.js"></script>
 
-
-    <script src="js/spin.min.js"></script>
-    <script src="js/send-mail.min.js"></script>
-    <script src="js/main.min.js"></script>
 </html>
