@@ -1,0 +1,368 @@
+ html {
+        }
+
+        body {
+            position: relative;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 960px;
+            font-family: 'Noto Serif',serif;
+        }
+
+        i {
+            display: inline-block;
+            height: 18px;
+            width: 18px;
+            -webkit-print-color-adjust: exact;
+            background-image: url('data:image/png;base64,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');
+        }
+
+            i.html {
+                background-position: 0 0;
+                height: 20px;
+                width: 21px;
+            }
+
+            i.js {
+                background-position: -22px 0;
+                height: 20px;
+                width: 21px;
+            }
+
+            i.fw {
+                background-position: -44px 0;
+                height: 20px;
+                width: 21px;
+            }
+
+            i.php {
+                background-position: -66px 0;
+                height: 20px;
+                width: 21px;
+            }
+
+            i.mkt {
+                background-position: -88px 0;
+            }
+
+            i.non {
+                background-position: -107px 0;
+            }
+
+            i.pro {
+                background-position: -126px 0;
+            }
+
+            i.misc {
+                background-position: -145px 0;
+            }
+
+        div {
+            vertical-align: top;
+        }
+
+        p {
+            word-break: hyphenate;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+            ul > li {
+                list-style: none;
+            }
+
+        abbr {
+            border-bottom: 1px dotted #b5b5b5;
+            cursor: help;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        h1 {
+            font-size: 300%;
+        }
+
+            h1 > small {
+                display: block;
+                color: #08c;
+                font-size: 50%;
+            }
+
+        .vcard {
+            position: absolute;
+            top: 2em;
+            right: 0;
+            width: 21em;
+            color: #575757;
+            font-size: 70%;
+            line-height: 1.33em;
+        }
+
+            .vcard > p {
+                margin: 0 0 .3em;
+            }
+
+            .vcard a {
+                color: #575757;
+                text-decoration: none;
+            }
+
+            .vcard > p > span {
+                width: 10em;
+                text-align: right;
+            }
+
+            .vcard > p > strong {
+                float: right;
+            }
+
+        ul a {
+            border-bottom: 1px dotted #c5c5c5;
+            color: #575757;
+            text-decoration: none;
+        }
+
+        ul.skills > li {
+            position: relative;
+            display: inline-block;
+            margin-left: 3.6%;
+            min-height: 7em;
+            width: 21%;
+            vertical-align: top;
+        }
+
+            ul.skills > li:nth-child(4n+4) {
+            }
+
+            ul.skills > li:nth-child(n+5) {
+                font-size: 90%;
+                opacity: .9;
+            }
+
+            ul.skills > li > h3 {
+                margin: 0;
+            }
+
+            ul.skills > li:nth-child(n+5) > h3 {
+                margin-top: 20px;
+            }
+
+            ul.skills > li > i {
+                position: absolute;
+                top: 2px;
+                left: -27px;
+                display: inline-block;
+            }
+
+            ul.skills > li:nth-child(n+5) > i {
+                top: 22px;
+            }
+
+            ul.skills > li > p {
+                margin: 0 5% 0 0;
+                color: #575757;
+                font-size: 80%;
+                line-height: 1.5em;
+            }
+
+        div > section {
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+        }
+
+        h2 {
+            margin-bottom: -10px;
+            color: #08c;
+            border-bottom: 2px dotted #b5b5b5;
+            font-weight: 100;
+        }
+
+        h3 {
+            margin-bottom: 0;
+        }
+
+        h4 {
+            color: #08c;
+            font-weight: 200;
+            margin-top: 0;
+            margin-bottom: .1em;
+        }
+
+            h4 > small {
+                float: right;
+                color: #b5b5b5;
+                font-weight: 200;
+                margin-top: .2em;
+            }
+
+        ul.bigone > li > h3, ul.bigone > li > h4 {
+            letter-spacing: -.05em;
+        }
+
+        ul.bigone > li > p {
+            margin-top: .5em;
+            color: #575757;
+            font-size: 80%;
+        }
+
+            ul.bigone > li > p.detail {
+                margin-top: 0;
+                color: #b5b5b5;
+                font-size: 75%;
+            }
+
+            ul.bigone > li > p + p.detail {
+                margin-top: -.5em;
+            }
+
+        footer {
+            float: right;
+            width: 100%;
+            margin-top: .66em;
+        }
+
+            footer > p {
+                margin: 0;
+                color: #c5c5c5;
+                font-weight: 100;
+                line-height: 1.33em;
+                text-align: right;
+            }
+
+                footer > p.statement {
+                    font-style: italic;
+                }
+
+                footer > p.url {
+                    font-size: 300%;
+                    margin: 0;
+                }
+
+                footer > p.email {
+                    margin-top: 0;
+                }
+
+        p.lastupdate {
+            float: left;
+            color: #c5c5c5;
+            font-size: 66%;
+            font-weight: 200;
+        }
+
+        @media screen and (max-width:768px) {
+            body {
+                padding: 0 10px;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+                h1 > small {
+                    font-size: 48%;
+                }
+
+            .vcard {
+                position: static;
+                font-size: 100%;
+                width: 100%;
+            }
+
+            ul.skills > li {
+                width: 45%;
+                min-height: 1em;
+                margin-left: 4.6%;
+            }
+
+            div > section {
+                width: 98.5%;
+            }
+
+            footer {
+                position: static;
+                max-width: 100%;
+            }
+        }
+
+        @media screen and (max-width:540px) {
+            h1 > small {
+                font-size: 36%;
+            }
+
+            .vcard {
+                width: 100%;
+                font-size: 90%;
+            }
+
+            ul.skills > li {
+                height: auto;
+                width: 100%;
+                margin-left: 5.6%;
+                margin-bottom: .5em;
+            }
+
+                ul.skills > li:nth-child(n+5) > h3 {
+                    margin-top: 0;
+                }
+
+                ul.skills > li:nth-child(n+5) > i {
+                    top: 2px;
+                }
+        }
+
+        @media print {
+            .noprint {
+                display: none;
+            }
+
+            body {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            abbr {
+                border-bottom: none;
+            }
+
+            h1 {
+                margin-top: 0;
+                font-size: 250%;
+            }
+
+                h1 > small {
+                    font-size: 35%;
+                }
+
+            h2 {
+                margin-top: 0;
+            }
+
+            h3 {
+                letter-spacing: -.05em;
+            }
+
+            ul.skills {
+                margin-left: 1%;
+            }
+
+                ul.skills > li {
+                    width: 20.5%;
+                }
+
+                    ul.skills > li > p {
+                        font-size: 75%;
+                    }
+
+            ul a {
+                text-decoration: none;
+            }
+
+            footer > p.url {
+                font-size: 200%;
+            }
+        }
