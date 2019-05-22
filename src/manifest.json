@@ -1,0 +1,23 @@
+{
+    "name": "VeluSGautam",
+    "short_name": "VeluSGautam",
+    "lang": "en-US",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "theme_color": "#FF9800",
+    "background_color": "#FF9800",
+    "icons": [
+      {
+        "src": "images/ico/andriod-icon-120x120.png",
+        "sizes": "120x120"
+      },
+      {
+        "src": "images/ico/andriod-icon-192x192.png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "images/ico/andriod-icon-180x180.png",
+        "sizes": "180x180"
+      }
+    ]
+  }
