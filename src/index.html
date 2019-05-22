@@ -4,8 +4,9 @@
     data-profileImageAnimation="rotate-left" data-jmpressAnimationDuration="1000" data-hideScrollbar="true">
 
 <head>
+        <link rel="manifest" href="manifest.json">
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6">
     <meta name="description" content="Personal website of Velu S Gautam">
     <meta name="keywords"
         content="velu s gautam, velusgautam, velu, gautam, subramanian, web designer, software engineer, technology evagalist ">
@@ -347,5 +348,17 @@
 <script src="js/spin.min.js"></script>
 <script src="js/send-mail.min.js"></script>
 <script src="js/main.min.js"></script>
-
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => {
+            console.log('Service worker registered! 😎', reg);
+          })
+          .catch(err => {
+            console.log('😥 Service worker registration failed: ', err);
+          });
+      });
+    }
+    </script>
 </html>
