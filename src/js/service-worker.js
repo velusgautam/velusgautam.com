@@ -1,9 +1,9 @@
 const cacheName = 'cache-v1';
 const precacheResources = [
   '/',
-  'index.html',
-  'css/style.css',
-  'images/bckg/pattern-brushed.png',
+  '../index.html',
+  '../css/style.css',
+  '../images/bckg/pattern-brushed.png',
 ];
 
 self.addEventListener('install', event => {
