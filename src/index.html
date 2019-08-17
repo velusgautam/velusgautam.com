@@ -348,17 +348,5 @@
 <script src="js/spin.min.js"></script>
 <script src="js/send-mail.min.js"></script>
 <script src="js/main.min.js"></script>
-<script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('js/service-worker.js')
-          .then(reg => {
-            console.log('Service worker registered! 😎', reg);
-          })
-          .catch(err => {
-            console.log('😥 Service worker registration failed: ', err);
-          });
-      });
-    }
-    </script>
+
 </html>
