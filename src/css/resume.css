@@ -198,7 +198,7 @@ h2 {
 h3 {
   font-size: 16px;
   margin-bottom: 3px;
-  font-weight: 100;
+  font-weight: 600;
 }
 
 h4,
@@ -469,7 +469,7 @@ p.lastupdate {
 .line::before {
   content: '';
   position: absolute;
-  height: calc(100% - 8px);
+  height: calc(100% - 11px);
   min-height: calc(60px - 22px);
   top: 25px;
   left: -45px;
@@ -479,12 +479,12 @@ p.lastupdate {
 
 .node {
   position: absolute;
-  display: block;
-  border: 2px solid #cfcfcf;
-  border-radius: 50%;
-  height: 8px;
-  width: 8px;
-  background-color: #cfcfcf;
-  left: -50px;
-  top: 7px;
+    display: block;
+    border: 2px solid #cfcfcf;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: #cfcfcf;
+    left: -48px;
+    top: 8px;
 }
