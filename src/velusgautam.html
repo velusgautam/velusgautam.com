@@ -16,29 +16,6 @@
     />
     <link href="css/resume.css" rel="stylesheet" type="text/css" />
     <link href="css/fonts.css" rel="stylesheet" type="text/css" />
-    <script>
-      function w(e) {
-        document.write(e);
-      }
-      function monthDiff(firstDate, secondDate) {
-        const fm = firstDate.getMonth();
-        const fy = firstDate.getFullYear();
-        const sm = secondDate.getMonth();
-        const sy = secondDate.getFullYear();
-        let months = Math.abs((fy - sy) * 12 + fm - sm);
-        const firstBefore = firstDate > secondDate;
-        firstDate.setFullYear(sy);
-        firstDate.setMonth(sm);
-        firstBefore
-          ? firstDate < secondDate
-            ? months--
-            : ''
-          : secondDate < firstDate
-          ? months--
-          : '';
-        return months;
-      }
-    </script>
   </head>
 
   <body>
@@ -188,10 +165,7 @@
               <small
                 >May 2019 - Present
                 <span class="duration">
-                  <script>
-                    w(monthDiff(new Date(2019, 4, 13), new Date()));
-                  </script>
-                  mos</span
+                  7 mos</span
                 >
               </small>
             </h3>
@@ -255,7 +229,10 @@
               <span class="node"></span>
               <h3>
                 Software Development Engineer III
-                <small>Nov 2017 - May 2018 <span class="duration">7 mos</span></small>
+                <small
+                  >Nov 2017 - May 2018
+                  <span class="duration">7 mos</span></small
+                >
               </h3>
 
               <p>
@@ -273,7 +250,10 @@
               <span class="node"></span>
               <h3>
                 Software Development Engineer II
-                <small>April 2016 - Oct 2017 <span class="duration">1 yr 7 mos</span></small>
+                <small
+                  >April 2016 - Oct 2017
+                  <span class="duration">1 yr 7 mos</span></small
+                >
               </h3>
 
               <p>
@@ -306,7 +286,10 @@
             <div class="company-info line">
               <span class="node"></span>
               <h3>
-                Senior Software Engineer<small>May 2015 - April 2016 <span class="duration">1 yr</span></small>
+                Senior Software Engineer<small
+                  >May 2015 - April 2016
+                  <span class="duration">1 yr</span></small
+                >
               </h3>
 
               <p>
@@ -318,7 +301,13 @@
             </div>
             <div class="company-info">
               <span class="node"></span>
-              <h3>Software Engineer <small>Sep 2012 - April 2015 <span class="duration">2 yr 8 mos</span></small></h3>
+              <h3>
+                Software Engineer
+                <small
+                  >Sep 2012 - April 2015
+                  <span class="duration">2 yr 8 mos</span></small
+                >
+              </h3>
 
               <p>
                 Working with Xerox as a full stack developer, My keen interest
@@ -335,9 +324,16 @@
             <img src="./images/logos/wixzi.png" />
           </div>
           <div class="company-info">
-            <h3>CEO &amp; Founder <small>May 2008 - Sep 2012 <span class="duration">4 yrs 5 mos</span></small></h3>
+            <h3>
+              CEO &amp; Founder
+              <small
+                >May 2008 - Sep 2012
+                <span class="duration">4 yrs 5 mos</span></small
+              >
+            </h3>
             <h4>
-              <a href="http://wixzi.com/" target="_blank">Wixzi Solutions</a><span class="location">Kollam, India</span>
+              <a href="http://wixzi.com/" target="_blank">Wixzi Solutions</a
+              ><span class="location">Kollam, India</span>
             </h4>
             <p>
               A start-up providing Free Educational services to society. Founded
@@ -451,7 +447,10 @@
       <p class="url">velusgautam.com</p>
       <p class="email">
         <script type="text/javascript">
-          w('i');
+          function w(e) {
+            document.write(e);
+          }
+          w('me');
           w('&#64;');
           w('velu');
           w('s');
