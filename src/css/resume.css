@@ -205,8 +205,14 @@ h4 > a {
   margin-bottom: 0.1em;
 }
 
-h4 .duration{
-  /* float: right; */
+h2 .duration{
+  color: var(--textColor);
+  font-weight: 100;
+  margin-top: 0.2em;
+  font-size: 70%;
+}
+
+ h4 .duration{
   color: var(--textColor);
   font-weight: 200;
   margin-top: 0.2em;
@@ -463,7 +469,7 @@ p.lastupdate {
 
 .duration::before {
   content: '\00B7';
-  margin: 0 5px;
+  margin: 0 6px;
 }
 
 .location {
