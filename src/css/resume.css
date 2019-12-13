@@ -3,12 +3,48 @@
   --blueColor: #3578e5;
 }
 
+/* Import ET Book styles
+   adapted from https://github.com/edwardtufte/fonts/et-book/blob/gh-pages/et-book.css */
+
+   @font-face {
+     font-family: "et-book";
+     src: url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+     src: url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+     font-weight: normal;
+     font-style: normal
+   }
+   
+   @font-face {
+     font-family: "et-book";
+     src: url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+     src: url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+     font-weight: normal;
+     font-style: italic
+   }
+   
+   @font-face {
+     font-family: "et-book";
+     src: url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+     src: url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+     font-weight: bold;
+     font-style: normal
+   }
+   
+   @font-face {
+     font-family: "et-book-roman-old-style";
+     src: url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+     src: url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
+     font-weight: normal;
+     font-style: normal;
+   }
+
 body {
   position: relative;
   margin: 0 auto;
   padding: 0;
   max-width: 960px;
-  font-family: 'Noto Serif', serif;
+  /* font-family: 'Noto Serif', serif; */
+  font-family: et-book, Georgia, serif;
   /* font-family: 'Montserrat', sans-serif; */
   /* font-family: 'Open Sans', sans-serif; */
 }
@@ -65,9 +101,6 @@ div {
   vertical-align: top;
 }
 
-/* p {
-  word-break: hyphenate;
-} */
 
 ul {
   padding: 0;
@@ -90,7 +123,7 @@ abbr {
   position: absolute;
   top: 2em;
   right: 0;
-  width: 21em;
+  width: 17em;
   color: #575757;
   font-size: 75%;
   line-height: 1.33em;
@@ -232,10 +265,17 @@ ul.bigone .company-info p {
   line-height: 18px;
 }
 
+.education p, .hornors-and-awards p{
+  margin-top: 0.5em;
+  color: var(--textColor);
+  font-size: 14px;
+  line-height: 18px;
+}
+
 ul.bigone > li > p.detail {
   margin-top: 0;
-  color: #636363;
-  font-size: 75%;
+  color: #313131;
+  font-size: 85%;
 }
 
 ul.bigone > li > p + p.detail {
