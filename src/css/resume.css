@@ -1,52 +1,16 @@
 :root {
   --textColor: #1d2129;
-  --blueColor: #3578e5;
+  --blueColor: #4527a0;
 }
 
-/* Import ET Book styles
-   adapted from https://github.com/edwardtufte/fonts/et-book/blob/gh-pages/et-book.css */
-
-   @font-face {
-     font-family: "et-book";
-     src: url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
-     src: url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
-     font-weight: normal;
-     font-style: normal
-   }
-   
-   @font-face {
-     font-family: "et-book";
-     src: url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
-     src: url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
-     font-weight: normal;
-     font-style: italic
-   }
-   
-   @font-face {
-     font-family: "et-book";
-     src: url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
-     src: url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
-     font-weight: bold;
-     font-style: normal
-   }
-   
-   @font-face {
-     font-family: "et-book-roman-old-style";
-     src: url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
-     src: url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbookromanosf") format("svg");
-     font-weight: normal;
-     font-style: normal;
-   }
 
 body {
   position: relative;
   margin: 0 auto;
   padding: 0;
   max-width: 960px;
-  /* font-family: 'Noto Serif', serif; */
-  font-family: et-book, Georgia, serif;
-  /* font-family: 'Montserrat', sans-serif; */
-  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Noto Serif', serif;
+
 }
 
 i {
@@ -113,7 +77,9 @@ ul > li {
 abbr {
   border-bottom: 1px dotted #b5b5b5;
   cursor: help;
+  text-decoration: none;
 }
+
 
 .hide {
   display: none;
@@ -123,7 +89,7 @@ abbr {
   position: absolute;
   top: 2em;
   right: 0;
-  width: 17em;
+  width: 21em;
   color: #575757;
   font-size: 75%;
   line-height: 1.33em;
@@ -171,10 +137,7 @@ ul.skills > li {
   flex: 1 0 20%;
 }
 
-/* ul.skills > li:nth-child(n + 5) {
-  font-size: 90%;
-  opacity: 0.9;
-} */
+
 
 ul.skills > li > h3 {
   margin: 0;
@@ -212,13 +175,13 @@ h1 {
   font-size: 2.4rem;
   color: var(--textColor);
   font-weight: 100;
+  margin-bottom: 10px;
 }
 
 h1 > small {
   display: block;
   color: var(--blueColor);
   font-size: 50%;
-  margin-left: 5px;
 }
 
 h2 {
@@ -229,7 +192,7 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 3px;
   font-weight: 600;
 }
@@ -240,6 +203,14 @@ h4 > a {
   font-weight: 200;
   margin-top: 0;
   margin-bottom: 0.1em;
+}
+
+h4 .duration{
+  /* float: right; */
+  color: var(--textColor);
+  font-weight: 200;
+  margin-top: 0.2em;
+  font-size: smaller;
 }
 
 h3 > small {
@@ -260,12 +231,13 @@ ul.bigone > li > h4 {
 
 ul.bigone .company-info p {
   margin-top: 0.5em;
+  margin-bottom: 0.6em;
   color: var(--textColor);
   font-size: 14px;
   line-height: 18px;
 }
 
-.education p, .hornors-and-awards p{
+.education p, .honours-and-awards p{
   margin-top: 0.5em;
   color: var(--textColor);
   font-size: 14px;
@@ -378,6 +350,11 @@ p.lastupdate {
 }
 
 @media print {
+
+  ul.skills{
+    margin-bottom: 0px;
+  }
+
   .noprint {
     display: none;
   }
@@ -397,7 +374,7 @@ p.lastupdate {
   }
 
   h1 > small {
-    font-size: 35%;
+    font-size: 55%;
   }
 
   h2 {
@@ -428,11 +405,14 @@ p.lastupdate {
     font-size: 200%;
   }
 
-  ul.bigone .company-info p {
+  ul.bigone .company-info p,
+  .education p, 
+  .onours-and-awards p{
     margin-top: 0.5em;
+    margin-bottom: 0.6em;
     color: var(--textColor);
     font-size: 12px;
-    line-height: 16px;
+    line-height: 15px;
   }
 }
 
@@ -440,8 +420,11 @@ p.lastupdate {
   content: '';
   display: block;
   border-bottom: 1px solid #e6e9ec;
-  /* margin-top: 16px; */
   margin-left: 75px;
+}
+
+.employment ul :last-child::after{
+  content: none;
 }
 
 .pad10 {
