@@ -27,7 +27,7 @@
   "homepage": "http://www.velusgautam.com",
   "devDependencies": {
     "lighthousebot": "git+https://github.com/GoogleChromeLabs/lighthousebot.git",
-    "parcel-bundler": "^1.12.4",
-    "serve": "^11.1.0"
+    "parcel-bundler": "1.12.4",
+    "serve": "11.1.0"
   }
 }
