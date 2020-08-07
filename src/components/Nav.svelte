@@ -4,14 +4,16 @@
 
 <style>
   nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     font-weight: 300;
-    padding: 0 1em;
+    padding: 0 5rem;
   }
 
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
   }
 
   /* clearfix */
@@ -23,7 +25,6 @@
 
   li {
     display: block;
-    float: left;
   }
 
   [aria-current] {
@@ -38,12 +39,13 @@
     height: 2px;
     background-color: rgb(255, 62, 0);
     display: block;
-    bottom: -1px;
+    bottom: 0px;
   }
 
   a {
     text-decoration: none;
     padding: 1em 0.5em;
+    margin: 0 1rem;
     display: block;
   }
 </style>
@@ -52,14 +54,14 @@
   <ul>
     <li>
       <a aria-current={segment === undefined ? 'page' : undefined} href=".">
-        home
+        Home
       </a>
     </li>
     <li>
       <a
         aria-current={segment === 'profile' ? 'page' : undefined}
         href="profile">
-        profile
+        Profile
       </a>
     </li>
   </ul>
