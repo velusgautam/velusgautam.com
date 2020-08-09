@@ -1,26 +1,4 @@
-@media (min-width: 400px) {
-  body {
-    font-size: 16px;
-  }
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 0.5em 0;
-  font-weight: 400;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-a {
-  color: inherit;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
 html {
   height: 100%;
 }
@@ -32,8 +10,60 @@ body {
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
-  color: #252525;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: rgb(100, 100, 100);
+  color: #3b3b3b;
+  font-family: "Nunito", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: linear-gradient(to right bottom, #c1c1c1 50%, #7207d7 50%);
+  background-color: #7207d7;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+a {
+  color: inherit;
+}
+
+#sapper {
+  width: calc(60%);
+  height: calc(60%);
+}
+
+@media screen and (min-width: 1444px) and (max-width: 1600px) {
+  #sapper {
+    width: calc(70%);
+    height: calc(70%);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1443px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  #sapper {
+    width: calc(85%);
+    height: calc(85%);
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 766px) {
+  h1 {
+    font-size: 2rem;
+  }
+  #sapper {
+    width: calc(100%);
+    height: calc(100%);
+  }
+  p {
+    font-size: 0.8rem;
+  }
 }

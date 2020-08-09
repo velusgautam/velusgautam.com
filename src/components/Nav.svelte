@@ -4,14 +4,13 @@
 
 <style>
   nav {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    font-weight: 300;
     padding: 0 5rem;
   }
 
   ul {
     margin: 0;
     padding: 0;
+    padding-top: 10px;
     display: flex;
     justify-content: flex-end;
   }
@@ -37,14 +36,15 @@
     content: '';
     width: calc(100% - 1em);
     height: 2px;
-    background-color: rgb(255, 62, 0);
+    background-color: #7207d7;
     display: block;
     bottom: 0px;
   }
 
   a {
+    font-size: 1.2rem;
     text-decoration: none;
-    padding: 1em 0.5em;
+    padding: 1em 0.5em 0.5em 0.5em;
     margin: 0 1rem;
     display: block;
   }
@@ -53,14 +53,18 @@
 <nav>
   <ul>
     <li>
-      <a aria-current={segment === undefined ? 'page' : undefined} href=".">
+      <a
+        aria-current={segment === undefined ? 'page' : undefined}
+        href="."
+        rel="prefetch">
         Home
       </a>
     </li>
     <li>
       <a
         aria-current={segment === 'profile' ? 'page' : undefined}
-        href="profile">
+        href="profile"
+        rel="prefetch">
         Profile
       </a>
     </li>
