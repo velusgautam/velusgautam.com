@@ -13,8 +13,11 @@ body {
   color: #3b3b3b;
   font-family: "Nunito", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background: linear-gradient(to right bottom, #c1c1c1 50%, #7207d7 50%);
-  background-color: #7207d7;
+  /* background: linear-gradient(to right bottom, #e5be00 50%, #4c0d7e 50%); */
+  /* background-color: #4c0d7e; */
+
+  background: linear-gradient(to right bottom, #25007e7d 50%, #54af0052 50%),
+    linear-gradient(to right top, #1900e566 50%, #e91e63 50%);
 }
 
 h1 {

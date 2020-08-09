@@ -19,7 +19,7 @@
     width: 100%;
     height: 100%;
     background-color: white;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
 </style>
