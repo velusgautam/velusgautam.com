@@ -26,6 +26,6 @@
   "homepage": "http://www.velusgautam.com",
   "devDependencies": {
     "parcel-bundler": "1.12.4",
-    "serve": "11.3.2"
+    "serve": "12.0.1"
   }
 }
