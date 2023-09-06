@@ -6,9 +6,9 @@
   "source": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified.\"",
-    "prebuild": "rm -rf dist",
     "dev": "parcel",
-    "build": "parcel build"
+    "prebuild": "rm -rf dist",
+    "build": "yarn prebuild && parcel build"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,9 @@
   "homepage": "http://www.velusgautam.com",
   "devDependencies": {
     "parcel": "v2.8.0",
-    "serve": "latest"
+    "postcss": "^8.4.29",
+    "serve": "latest",
+    "tailwindcss": "^3.3.3"
   },
   "packageManager": "yarn@3.6.3"
 }
