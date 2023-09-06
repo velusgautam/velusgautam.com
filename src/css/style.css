@@ -1,3 +1,55 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.spaced-y-2 > * {
+  margin-bottom: 0.5rem;
+}
+
+.spaced-y-2 > :last-child {
+  margin-bottom: 0;
+}
+
+.spaced-x-6 > * {
+  margin-right: 1.5rem;
+}
+
+.spaced-x-6 > :last-child {
+  margin-right: 0;
+}
+
+.spaced-y-6 > * {
+  margin-bottom: 1.5rem;
+}
+
+.spaced-y-6 > :last-child {
+  margin-bottom: 0;
+}
+
+.spaced-y-8 > * {
+  margin-bottom: 2rem;
+}
+
+.spaced-y-8 > :last-child {
+  margin-bottom: 0;
+}
+
+.spaced-y-10 > * {
+  margin-bottom: 2.5rem;
+}
+
+.spaced-y-10 > :last-child {
+  margin-bottom: 0;
+}
+
+.pin-x {
+  right: 0 !important;
+  left: 0 !important;
+}
+
+.pin {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0 !important;
+}

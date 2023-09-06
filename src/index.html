@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Personal website of Velu S Gautam" />
   <meta name="keywords"
     content="velu s gautam, velusgautam, velu, gautam, subramanian, web designer, software engineer, technology evagalist " />
@@ -20,36 +20,34 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body class="text-black leading-tight antialiased">
-  <div class="py-8 lg:py-16 px-6 md:px-16 lg:px-24">
-    <div class="relative z-20 flex justify-between items-center">
-      <div class="flex md:block lg:flex items-center max-w-full">
-        <div class="mb-0 md:mb-4 lg:mb-0 flex flex-no-shrink pr-4 md:pr-6 lg:pr-12">
+<body class="antialiased leading-tight text-black">
+  <div class="px-6 py-8 lg:py-16 md:px-16 lg:px-24">
+    <div class="relative z-20 flex items-center justify-between">
+      <div class="flex items-center max-w-full md:block lg:flex">
+        <div class="flex pr-4 mb-0 md:mb-4 lg:mb-0 flex-no-shrink md:pr-6 lg:pr-8">
           <a href="/" class="flex items-center no-underline">
-            <picture class="h-10 w-10 md:h-12 md:w-12 lg:h-20 lg:w-20 rounded-full">
-              <source type="image/webp" srcset="images/site/velusgautam.webp" />
-              <img src="images/site/velusgautam1.png" alt="profile picture" />
-            </picture>
+            <img class="w-10 h-10 rounded-full md:h-12 md:w-12 lg:h-24 lg:w-24"
+              src="	https://www.gravatar.com/avatar/34e121da35bd5b5c6f7bd1edb114ff87?s=96" alt="profile picture" />
           </a>
         </div>
         <div>
           <a href="/"
-            class="block text-black no-underline font-bold text-xl lg:text-3xl font-extrabold leading-none lg:leading-tight">Velu
+            class="block text-xl font-bold font-extrabold leading-none text-black no-underline lg:text-3xl lg:leading-tight">Velu
             S Gautam</a>
-          <div class="hidden md:flex mt-3 lg:mt-4 uppercase tracking-wide text-xs spaced-x-6">
+          <div class="hidden mt-3 space-x-6 text-xs tracking-wide uppercase md:flex lg:mt-4">
+            <a href="./work.html" class="font-semibold text-gray-600 no-underline hover:text-black">Work</a>
             <a href="http://hectane.com" target="_blank"
-              class="text-grey-dark font-semibold no-underline hover:text-black">Articles</a>
-            <a href="./velusgautam.html" class="text-grey-dark font-semibold no-underline hover:text-black">Work</a>
+              class="font-semibold text-gray-600 no-underline hover:text-black">Articles ↗</a>
           </div>
         </div>
       </div>
       <div class="block md:hidden">
-        <button class="block" @click="toggleMenu">
-          <svg style="display: block" :class="menuOpen ? 'hidden' : 'block'" class="block text-black h-6 w-6"
+        <button class="block">
+          <svg style="display: block" :class="menuOpen ? 'hidden' : 'block'" class="block w-6 h-6 text-black"
             fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
             <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
           </svg>
-          <svg style="display: none" :class="menuOpen ? 'block' : 'hidden'" class="text-black h-6 w-6"
+          <svg style="display: none" :class="menuOpen ? 'block' : 'hidden'" class="w-6 h-6 text-black"
             fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
             <path
               d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
@@ -57,24 +55,23 @@
         </button>
       </div>
     </div>
-    <div style="display: none" :class="menuOpen ? 'block' : 'hidden'" class="md:hidden z-10 bg-white fixed pin pt-24">
-      <div class="spaced-y-8 overflow-y-auto pt-6 pb-8 px-12 max-h-full overflow-y-auto">
+    <div style="display: none" :class="menuOpen ? 'block' : 'hidden'" class="fixed z-10 pt-24 bg-white md:hidden pin">
+      <div class="max-h-full px-12 pt-6 pb-8 overflow-y-auto spaced-y-8">
         <a href="http://hectane.com" target="_blank"
-          class="text-grey-dark font-semibold no-underline hover:text-black">Articles</a>
-        <a href="./velusgautam.html" class="text-grey-dark font-semibold no-underline hover:text-black">Work</a>
+          class="font-semibold no-underline text-grey-dark hover:text-black">Articles</a>
+        <a href="./velusgautam.html" class="font-semibold no-underline text-grey-dark hover:text-black">Work</a>
       </div>
     </div>
-    <div class="lg:pl-32 mt-12">
-      <div class="max-w-md">
-        <h1 class="text-2xl font-extrabold text-black mb-4">About</h1>
-        <div class="text-lg text-grey-darkest leading-normal spaced-y-6">
+    <div class="mt-12 lg:pl-32">
+      <div class="max-w-xl">
+        <h1 class="mb-4 text-2xl font-extrabold text-gray-800">About</h1>
+        <div class="text-lg leading-8 text-gray-700 spaced-y-6">
           <p>
-            I am a curious web engineer. I love experimenting and doing POC on
-            new libraries and enjoy the dopamine from seeing the end result in
-            a browser. I love rewriting my own code whenever I lean new things
-            or find my old mistakes. Now I am learning Docker, K8s,
-            Prometheus, Grafana and CD. I love to automate motonous daily
-            tasks that make mine and my coworkers life easier.
+            I'm a web engineer who thrives on curiosity and innovation. I enjoy experimenting with new libraries and
+            relish the satisfaction of witnessing the outcome in a web browser. I'm constantly learning, with a current
+            focus on infrastructure, monitoring, alerting and CI/CD. My passion lies in automating routine tasks to
+            enhance productivity for both myself and my colleagues, ultimately striving for a better developer
+            experience.
           </p>
         </div>
       </div>
