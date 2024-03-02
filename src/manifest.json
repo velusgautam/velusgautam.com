@@ -1,23 +1,23 @@
 {
-    "name": "VeluSGautam",
-    "short_name": "VeluSGautam",
-    "lang": "en-US",
-    "start_url": "/index.html",
-    "display": "standalone",
-    "theme_color": "#FF9800",
-    "background_color": "#FF9800",
-    "icons": [
-      {
-        "src": "images/ico/andriod-icon-120x120.png",
-        "sizes": "120x120"
-      },
-      {
-        "src": "images/ico/andriod-icon-192x192.png",
-        "sizes": "192x192"
-      },
-      {
-        "src": "images/ico/andriod-icon-180x180.png",
-        "sizes": "180x180"
-      }
-    ]
-  }
+  "name": "VeluSGautam",
+  "short_name": "VeluSGautam",
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#f4f4f6",
+  "background_color": "#f4f4f6",
+  "icons": [
+    {
+      "src": "https://www.gravatar.com/avatar/34e121da35bd5b5c6f7bd1edb114ff87?s=120",
+      "sizes": "120x120"
+    },
+    {
+      "src": "https://www.gravatar.com/avatar/34e121da35bd5b5c6f7bd1edb114ff87?s=192",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://www.gravatar.com/avatar/34e121da35bd5b5c6f7bd1edb114ff87?s=180",
+      "sizes": "180x180"
+    }
+  ]
+}
