@@ -2,7 +2,10 @@
   "name": "velusgautam",
   "version": "1.0.0",
   "description": "velu s gautam personal website",
-  "node": ">=18.0.0",
+  "engines": {
+    "node": ">=20.9.0",
+    "yarn": "^4.1.0"
+  },
   "source": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified.\"",
@@ -26,10 +29,10 @@
   },
   "homepage": "http://www.velusgautam.com",
   "devDependencies": {
-    "parcel": "v2.8.0",
-    "postcss": "^8.4.29",
-    "serve": "latest",
-    "tailwindcss": "^3.3.3"
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.35",
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.4.1"
   },
-  "packageManager": "yarn@3.6.3"
+  "packageManager": "yarn@4.1.0"
 }
