@@ -232,6 +232,10 @@ h3 > small {
   margin-right: 3px;
 }
 
+.content-inside {
+  text-decoration: dotted;
+}
+
 .bigone {
   margin-top: 25px;
 }
@@ -436,14 +440,14 @@ p.lastupdate {
   }
 }
 
-.employment li::after {
+.employment ul.bigone > li::after {
   content: '';
   display: block;
   border-bottom: 1px solid #e6e9ec;
   margin-left: 75px;
 }
 
-.employment ul :last-child::after {
+.employment ul.bigone > :last-child::after {
   content: none;
 }
 
