@@ -455,6 +455,10 @@ p.lastupdate {
   padding-top: 10px;
 }
 
+.pad1 {
+  padding-top: 1px;
+}
+
 .employment .company-logo {
   height: 56px;
   width: 56px;
