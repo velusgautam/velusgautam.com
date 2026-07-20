@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Velu S Gautam — Resume</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: A4;
+      margin: 1.6cm 2cm;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Noto Serif', Georgia, 'Times New Roman', serif;
+      font-size: 10.5pt;
+      line-height: 1.55;
+      color: #1a1a1a;
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 44px 36px;
+      background: #fff;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ── Header ── */
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 22px;
+    }
+
+    .hd-name h1 {
+      font-size: 26pt;
+      font-weight: 700;
+      margin: 0 0 4px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .hd-name .subtitle {
+      font-size: 11pt;
+      font-weight: 400;
+      color: #555;
+      margin: 0;
+    }
+
+    .hd-contact {
+      text-align: right;
+      font-size: 9.5pt;
+      line-height: 1.7;
+      color: #1a1a1a;
+      padding-top: 4px;
+    }
+
+    .hd-contact a {
+      color: #1a54b0;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ── Section headers ── */
+
+    section {
+      margin-top: 18px;
+    }
+
+    h2 {
+      font-size: 9.5pt;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin: 0 0 7px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #c8c8c8;
+    }
+
+    /* ── Skills ── */
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0 32px;
+    }
+
+    .skills-grid p {
+      margin: 0 0 5px;
+      font-size: 10pt;
+      line-height: 1.45;
+    }
+
+    /* ── Experience ── */
+
+    .exp-company {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 13px;
+    }
+
+    .exp-company:first-child {
+      margin-top: 0;
+    }
+
+    .exp-company-name {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .exp-meta {
+      font-size: 9.5pt;
+      color: #1a1a1a;
+      white-space: nowrap;
+      margin-left: 12px;
+      flex-shrink: 0;
+    }
+
+    .exp-role {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-top: 1px;
+    }
+
+    .exp-role-title {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .exp-role-date {
+      font-size: 9.5pt;
+      color: #1a1a1a;
+      white-space: nowrap;
+      margin-left: 12px;
+      flex-shrink: 0;
+    }
+
+    .exp-desc {
+      margin: 4px 0 3px;
+      font-size: 10pt;
+      line-height: 1.5;
+    }
+
+    .exp-tags {
+      font-size: 9pt;
+      color: #555;
+      margin: 0 0 4px;
+      line-height: 1.4;
+    }
+
+    /* ── Awards ── */
+
+    .awards-list {
+      list-style: disc;
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    .awards-list li {
+      font-size: 10pt;
+      line-height: 1.5;
+      margin-bottom: 5px;
+    }
+
+    /* ── Education ── */
+
+    .edu-entry {
+      margin-top: 10px;
+    }
+
+    .edu-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .edu-degree {
+      font-weight: 700;
+      font-size: 10.5pt;
+    }
+
+    .edu-date {
+      font-size: 9.5pt;
+      color: #1a1a1a;
+      white-space: nowrap;
+      margin-left: 12px;
+      flex-shrink: 0;
+    }
+
+    .edu-detail {
+      font-size: 10pt;
+      color: #1a1a1a;
+      margin: 1px 0 0;
+      line-height: 1.5;
+    }
+
+    .edu-note {
+      font-size: 10pt;
+      margin-top: 10px;
+      line-height: 1.5;
+    }
+
+    /* ── Print overrides ── */
+
+    @media print {
+      body {
+        max-width: 100%;
+        padding: 0;
+        font-size: 10pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      header {
+        margin-bottom: 18px;
+      }
+
+      section {
+        margin-top: 14px;
+      }
+
+      .exp-company {
+        margin-top: 10px;
+      }
+
+      .exp-desc {
+        margin: 3px 0 2px;
+      }
+
+      .awards-list li {
+        margin-bottom: 4px;
+      }
+
+      .edu-entry {
+        margin-top: 8px;
+      }
+
+      a {
+        color: #1a54b0;
+      }
+
+      @page {
+        orphans: 3;
+        widows: 3;
+      }
+
+      .no-break {
+        page-break-inside: avoid;
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      body {
+        padding: 24px 16px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .hd-contact {
+        text-align: left;
+      }
+
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .exp-company,
+      .exp-role,
+      .edu-title-row {
+        flex-direction: column;
+        gap: 1px;
+      }
+
+      .exp-meta,
+      .exp-role-date,
+      .edu-date {
+        margin-left: 0;
+        color: #555;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="hd-name">
+      <h1>Velu S Gautam</h1>
+      <p class="subtitle">Staff Software Engineer</p>
+    </div>
+    <div class="hd-contact">
+      <a href="https://velusgautam.com">velusgautam.com</a><br />
+      <a href="mailto:me@velusgautam.com">me@velusgautam.com</a><br />
+      <a href="https://linkedin.com/in/velusgautam">linkedin.com/in/velusgautam</a><br />
+      Stockholm, Sweden &middot; +46 70 461 71 92
+    </div>
+  </header>
+
+  <!-- ── SKILLS ── -->
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>
+        <p><strong>AI &mdash;</strong> LLM, foundation models, AWS Bedrock, Knowledge Base, AI chatbots</p>
+        <p><strong>Infrastructure &mdash;</strong> Docker, Kubernetes, AWS, CDN, Lambda, CI/CD, Serverless, Jenkins</p>
+        <p><strong>Testing &mdash;</strong> Cypress, Jest, React Testing Library, A/B testing</p>
+      </div>
+      <div>
+        <p><strong>JavaScript &mdash;</strong> TypeScript, React, D3.js, Node.js, PWA, Service Workers</p>
+        <p><strong>DX &amp; Automation &mdash;</strong> GitHub Actions, Jira automation, Slack apps, RWD</p>
+        <p><strong>Data &mdash;</strong> SQL, MySQL, NoSQL, stored procedures, views</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section>
+    <h2>Experience</h2>
+
+    <!-- Warner Bros Discovery -->
+    <div class="no-break">
+      <div class="exp-company">
+        <span class="exp-company-name">Warner Bros Discovery</span>
+        <span class="exp-meta">Stockholm, Sweden &middot; Dec 2020 &ndash; Present</span>
+      </div>
+
+      <div class="exp-role">
+        <span class="exp-role-title">Staff Software Engineer</span>
+        <span class="exp-role-date">Nov 2024 &ndash; Present</span>
+      </div>
+      <p class="exp-desc">Built a RAG chatbot using Amazon Bedrock Knowledge Bases, cutting support requests 60% and accelerating developer onboarding 50%. Architected scalable cloud services, automated release pipelines, and authored Architectural Design Documents for cross-team system design.</p>
+      <p class="exp-tags">LLM, Amazon Bedrock Knowledge Bases, RAG, Chatbot, ADDs, Cron automation</p>
+
+      <div class="exp-role">
+        <span class="exp-role-title">Senior Software Engineer</span>
+        <span class="exp-role-date">Dec 2020 &ndash; Oct 2024 &middot; 3 yr 11 mo</span>
+      </div>
+      <p class="exp-desc">Owned the Studio Platform internal dashboard for a 50+ developer org &mdash; automation, deployments, monitoring/alerting, and developer-experience guidelines.</p>
+      <p class="exp-tags">GitHub Actions, Docker, K8s, React, TypeScript, Webpack, AWS, Node.js, Prometheus, Grafana, Nginx</p>
+    </div>
+
+    <!-- ComeOn! -->
+    <div class="no-break">
+      <div class="exp-company">
+        <span class="exp-company-name">ComeOn!</span>
+        <span class="exp-meta">Stockholm, Sweden &middot; May 2019 &ndash; Dec 2020 &middot; 1 yr 8 mo</span>
+      </div>
+      <div class="exp-role">
+        <span class="exp-role-title">Senior Software Engineer</span>
+      </div>
+      <p class="exp-desc">Led performance and architecture improvements for the core web app, focused on load performance, UX, and developer experience.</p>
+      <p class="exp-tags">React, Redux, Webpack, AWS CloudFront, Docker, Express, Node.js, SASS, WebAssembly, Svelte</p>
+    </div>
+
+    <!-- Athenahealth -->
+    <div class="no-break">
+      <div class="exp-company">
+        <span class="exp-company-name">Athenahealth</span>
+        <span class="exp-meta">Bangalore, India &middot; May 2018 &ndash; May 2019 &middot; 1 yr 1 mo</span>
+      </div>
+      <div class="exp-role">
+        <span class="exp-role-title">Lead Member of Technical Staff</span>
+      </div>
+      <p class="exp-desc">Led the Insights team building the client-facing Data Visualization Platform for Athena 2.0, enabling dynamic reporting for healthcare clients.</p>
+      <p class="exp-tags">React, Redux, D3.js, Node.js, Docker, Postgres, Jenkins, AWS</p>
+    </div>
+
+    <!-- WalmartLabs -->
+    <div class="no-break">
+      <div class="exp-company">
+        <span class="exp-company-name">WalmartLabs</span>
+        <span class="exp-meta">Bangalore, India &middot; 2 yr 2 mo</span>
+      </div>
+
+      <div class="exp-role">
+        <span class="exp-role-title">Software Development Engineer III</span>
+        <span class="exp-role-date">Nov 2017 &ndash; May 2018</span>
+      </div>
+      <p class="exp-desc">Core member of the frontend team for the Apparel Procurement &amp; Planning platform serving the entire U.S. Walmart store network, optimizing time, space, and cost across stores.</p>
+      <p class="exp-tags">React, Redux, TypeScript, CSS animations, Node.js, RTL, Cypress</p>
+
+      <div class="exp-role">
+        <span class="exp-role-title">Software Development Engineer II</span>
+        <span class="exp-role-date">Apr 2016 &ndash; Oct 2017</span>
+      </div>
+      <p class="exp-desc">Built and optimized D3.js/AngularJS visualizations over large datasets for Walmart&rsquo;s internal Business Decision platform.</p>
+      <p class="exp-tags">AngularJS 1.6, CSS3, D3.js, HTML5, Node.js, Azure</p>
+    </div>
+
+    <!-- Xerox Services -->
+    <div class="no-break">
+      <div class="exp-company">
+        <span class="exp-company-name">Xerox Services</span>
+        <span class="exp-meta">Cochin, India &middot; 3 yr 8 mo</span>
+      </div>
+
+      <div class="exp-role">
+        <span class="exp-role-title">Senior Software Engineer</span>
+        <span class="exp-role-date">May 2015 &ndash; Apr 2016</span>
+      </div>
+      <p class="exp-desc">Built and modernized web and mobile applications with improved UI/UX for Fortune 500 clients under stringent deadlines.</p>
+      <p class="exp-tags">AngularJS 1.6, CSS3, HTML5, ASP.NET, IIS, SSRS</p>
+
+      <div class="exp-role">
+        <span class="exp-role-title">Software Engineer</span>
+        <span class="exp-role-date">Sep 2012 &ndash; Apr 2015</span>
+      </div>
+      <p class="exp-desc">Full-stack developer on a multidisciplinary team, focused on UI development and advanced JavaScript.</p>
+      <p class="exp-tags">AngularJS 1.2, CSS3, HTML5, ASP.NET, IIS, SSRS</p>
+    </div>
+
+    <!-- Earlier & Entrepreneurial -->
+    <div class="no-break">
+      <div class="exp-company">
+        <span class="exp-company-name">Earlier &amp; Entrepreneurial</span>
+        <span class="exp-meta">2008 &ndash; 2012</span>
+      </div>
+      <p class="exp-desc">Founder &amp; CTO, Wixzi Solutions and Co-Founder, Lionmarks &mdash; delivered 50+ web and mobile projects worldwide and led the web teams across both ventures.</p>
+    </div>
+
+  </section>
+
+  <!-- ── HONOURS & AWARDS ── -->
+  <section>
+    <h2>Honours &amp; Awards</h2>
+    <ul class="awards-list">
+      <li><strong>Global Tech Champion &mdash;</strong> Warner Bros Discovery. Inaugural company-wide recognition for outstanding contributions, awarded by the CTO.</li>
+      <li><strong>Hero Spotlight Award &mdash;</strong> Athenahealth. Recognized for a successful Analytics Platform POC demo to the CTO.</li>
+      <li><strong>Certificate of Excellence &mdash;</strong> WalmartLabs. For exceeding expectations on delivery of the GEO Branding project.</li>
+      <li><strong>Eagle Award &mdash;</strong> Xerox Services. Recognized as a standout UI developer on the Microsoft TRP portal for fast turnaround and strong client impact.</li>
+    </ul>
+  </section>
+
+  <!-- ── EDUCATION & CONTRIBUTIONS ── -->
+  <section>
+    <h2>Education &amp; Contributions</h2>
+
+    <div class="edu-entry no-break">
+      <div class="edu-title-row">
+        <span class="edu-degree">Bachelor of Technology, Computer Science &amp; Engineering</span>
+        <span class="edu-date">2006 &ndash; 2010</span>
+      </div>
+      <p class="edu-detail">Cochin University of Science and Technology &middot; First Class &middot; Final project 9.7/10</p>
+    </div>
+
+    <div class="edu-entry no-break">
+      <div class="edu-title-row">
+        <span class="edu-degree">Master of Business Administration, Marketing &amp; Finance</span>
+        <span class="edu-date">2010 &ndash; 2012</span>
+      </div>
+      <p class="edu-detail">University of Kerala &middot; First Class &middot; Final project 9.1/10 &mdash; brings business and product judgment to technical architecture and roadmap decisions.</p>
+    </div>
+
+    <p class="edu-note">Open-source contributor and technical blogger &mdash; writes on new tools and techniques as part of ongoing learning.</p>
+  </section>
+
+</body>
+</html>
